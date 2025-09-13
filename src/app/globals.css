@@ -24,3 +24,11 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.flipbook-container {
+  overflow: hidden !important; /* hides scrollbars during drag */
+}
+#flipbook div {
+  background: white;
+  border: none; /* Remove border if you want fully clean book */
+}
