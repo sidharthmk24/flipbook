@@ -1,18 +1,33 @@
-'use client'
+"use client";
 
-import Flipbook from '@/Components/Flipbook/Flipbook'
-import Iframe from '@/Components/Iframe/Iframe'
-import React from 'react'
+import DragFlipbook from "@/Components/DragFlipbook";
+import Iframe from "@/Components/Iframe/Iframe";
+import StageFlip from "@/Components/Stageflip/StageFlip";
+import React from "react";
 
-const page = () => {
- 
+const Page = () => {
   return (
     <>
+    <Iframe/>
     
-    <Iframe/>  
+    <div className="flex justify-center items-center w-full min-h-screen">
+
+
+      <StageFlip
+        pages={[
+          "/magazine/page1.webp",
+          "/magazine/page2.webp",
+          "/magazine/page3.webp",
+          "/magazine/page4.webp",
+         "/magazine/page1.webp",
+          "/magazine/page2.webp",
+          "/magazine/page3.webp",
+          "/magazine/page4.webp",
+        ]}
+      />
+    </div>
     </>
+  );
+};
 
-)
-}
-
-export default page
+export default Page;
